@@ -1,42 +1,47 @@
 I've created a comprehensive README file for the Simple Fungible Token contract. 
 The README includes:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bd2b8128-b444-49f7-9557-e13790094c3c" />
-Address-STR4J9QNNYQF1F99P77ECDZENV0AXFMZ4CS79XG3.funkable
+Address-STR4J9QNNYQF1F99P77ECDZENV0AXFMZ4CS79XG3.funkableSimple Token (STK)
 
-## 📋 What's Covered:
+A simple fungible token smart contract written in Clarity for the Stacks blockchain.
+It defines a token with ERC20-like functionality including transfers, minting, and burning.
 
-### **Overview Section**
-- Token details and specifications
-- Key features and security highlights
-- Blockchain and language information
+📋 Token Details
 
-### **Complete Function Documentation**
-- All read-only functions with examples
-- All public functions with usage examples
-- Clear parameter descriptions and return values
+Name: Simple Token
 
-### **Practical Information**
-- **Decimal handling** with JavaScript helper functions
-- **Error codes** reference table
-- **Deployment guide** with step-by-step instructions
-- **Usage examples** for common operations
+Symbol: STK
 
-### **Developer Resources**
-- Testing guidelines and examples
-- Security considerations
-- Contributing guidelines
-- Support resources
+Decimals: 18
 
-### **User-Friendly Features**
-- Clear code examples for each function
-- Conversion helpers for working with 18 decimals
-- Troubleshooting section with error codes
-- Real-world usage scenarios
+Initial Supply: 1,000,000 STK (minted to contract deployer)
 
-This README provides everything needed for:
-- **Developers** wanting to understand or modify the contract
-- **Users** wanting to interact with the token
-- **Deployers** wanting to launch their own version
-- **Contributors** wanting to improve the project
+⚙️ Features
 
-The documentation follows standard open-source practices and includes all the essential information someone would need to work with this fungible token contract!
+Token Info: get-name, get-symbol, get-decimals, get-total-supply
+
+Balances: get-balance (account)
+
+Transfers:
+
+transfer (amount, recipient)
+
+transfer-from (amount, sender, recipient)
+
+Minting & Burning:
+
+mint (amount, recipient) → only owner
+
+burn (amount) → self-burn
+
+Owner: get-owner
+
+Initialization: mints 1,000,000 STK to contract owner at deployment
+
+❌ Error Codes
+
+u100 → Owner only
+
+u101 → Insufficient balance
+
+u102 → Invalid amount
