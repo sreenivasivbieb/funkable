@@ -1,4 +1,5 @@
-I've created a comprehensive README file for the Simple Fungible Token contract. The README includes:
+I've created a comprehensive README file for the Simple Fungible Token contract. 
+The README includes:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bd2b8128-b444-49f7-9557-e13790094c3c" />
 Address-STR4J9QNNYQF1F99P77ECDZENV0AXFMZ4CS79XG3
 
